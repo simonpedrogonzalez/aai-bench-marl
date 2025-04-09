@@ -1,0 +1,12 @@
+[project]
+name = "aai-bench-marl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dm-meltingpot>=2.4.0",
+    "moviepy>=2.1.2",
+    "vmas>=1.5.0",
+    "wandb>=0.19.9",
+]
