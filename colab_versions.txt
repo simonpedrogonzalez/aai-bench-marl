@@ -1,0 +1,10 @@
+
+Python 3.11.12
+
+Python version: 3.11.12 (main, Apr  9 2025, 08:55:54) [GCC 11.4.0]
+PyTorch version: 2.6.0+cu124
+TorchVision version: 0.21.0+cu124
+benchmarl version: 1.4.0
+vmas version: 1.5.0
+meltingpot version: 2.4.0
+tensordict version: 0.7.2

@@ -6,9 +6,10 @@
 
 from benchmarl.algorithms import MappoConfig, MasacConfig, QmixConfig
 from benchmarl.benchmark import Benchmark
-from benchmarl.environments import VmasTask
+from benchmarl.environments import VmasTask, MeltingPotTask
 from benchmarl.experiment import ExperimentConfig
 from benchmarl.models.mlp import MlpConfig
+from benchmarl.models.cnn import CnnConfig
 
 if __name__ == "__main__":
 
@@ -16,7 +17,9 @@ if __name__ == "__main__":
     experiment_config = ExperimentConfig.get_from_yaml()
 
     # Loads from "benchmarl/conf/task/vmas"
-    tasks = [VmasTask.BALANCE.get_from_yaml(), VmasTask.SAMPLING.get_from_yaml()]
+    tasks = [
+        MeltingPotTask.RUNNING_WITH_SCISSORS_IN_THE_MATRIX__ARENA.get_from_yaml(),
+    ]
 
     # Loads from "benchmarl/conf/algorithm"
     algorithm_configs = [
@@ -27,6 +30,8 @@ if __name__ == "__main__":
 
     # Loads from "benchmarl/conf/model/layers"
     model_config = MlpConfig.get_from_yaml()
+
+
     critic_model_config = MlpConfig.get_from_yaml()
 
     benchmark = Benchmark(

@@ -19,3 +19,6 @@ git checkout 3a0a8bb
 cd ../..
 uv pip install -e thirdparty/tensordict
 
+
+
+gitkraken://repolink/116ce095680974c27a01a8cca6bc3bc286386ec2/commit/747e0c4cb0620301ad87fab72034614e267c69be?url=https%3A%2F%2Fgithub.com%2Ffacebookresearch%2FBenchMARL.git

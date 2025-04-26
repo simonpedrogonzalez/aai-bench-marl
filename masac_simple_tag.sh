@@ -1,0 +1,15 @@
+HYDRA_FULL_ERROR=1 uv run thirdparty/BenchMARL/benchmarl/run.py -m \
+  algorithm=masac \
+  task=pettingzoo/simple_tag \
+  model=layers/mlp \
+  critic_model=\${model} \
+  seed=0 \
+  experiment.max_n_frames=245760 \
+  experiment.train_device=cuda \
+  experiment.sampling_device=cuda \
+  experiment.buffer_device=cpu \
+  experiment.render=false \
+  experiment.off_policy_collected_frames_per_batch=4096 \
+  experiment.evaluation_interval=12288 \
+  experiment.lr=3e-4 \
+  "experiment.loggers=[csv]"
